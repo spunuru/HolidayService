@@ -61,3 +61,6 @@ mvn tomcat7:run
    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
+
+### Logs
+holiday.log file generated in the current working directory
