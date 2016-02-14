@@ -1,0 +1,21 @@
+<configuration scan="true">
+
+	<appender name="FILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>./holiday.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- daily rollover -->
+			<fileNamePattern>./holiday.%d{yyyy-MM-dd}.log.zip</fileNamePattern>
+			<!-- keep 30 days' worth of history -->
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%date %level [%thread] %logger{35} - %msg%n
+			</pattern>
+		</encoder>
+	</appender> 
+
+	<root level="INFO">
+		<appender-ref ref="FILE" />
+	</root>
+</configuration>
