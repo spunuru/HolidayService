@@ -21,7 +21,7 @@ public class BasicHumanResourceService implements HumanResourceService {
     private final Random random = new Random(738873930303l);
     
     private List<String> approved = Arrays.asList("Enjoy Holidays!", "You really deserved Vacation!", "Hope you have safe trip!", "Stay warm in the cold weather!");
-    private List<String> rejected = Arrays.asList("You had enough holidays. Stop requesting!", "Have you done any work in your life? Why do you need vacation?", "I do not like your name!", "Sorry!. HR is not happy with your performance!");
+    private List<String> rejected = Arrays.asList("You had enough holidays. Now get back to work!", "Have you done any work in your life? Why do you need vacation?", "I do not like your name!", "Sorry!. HR is not happy with your performance!");
 
     public HolidayServiceResult bookHoliday(Date startDate, Date endDate, String name) {
         
